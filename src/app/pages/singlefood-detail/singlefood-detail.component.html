@@ -1,0 +1,28 @@
+<div class="container mt-5 mb-5">
+  <button [routerLink]="['/menu']" class="btn btn-md btn-dark mt-3">
+    Back
+  </button>
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="foodbox mt-3 mb-3" *ngFor="let item of food">
+        <img src="{{ item.img }}" />
+        <h1>{{ item.name }}</h1>
+        <p>{{ item.price | currency : "INR" }}</p>
+        <p class="mb-4">{{ item.fooddetail }}</p>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <h1>Enter Your Details</h1>
+      <form>
+        <input class="form-control" placeholder="enter your name" />
+        <input class="form-control" placeholder="enter your mobail number" />
+        <textarea
+          class="form-control"
+          placeholder="enter your address"
+        ></textarea>
+        <button class="btn btn-md btn-dark mt-3">Place order</button>
+      </form>
+    </div>
+  </div>
+</div>

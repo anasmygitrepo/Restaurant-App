@@ -1,0 +1,28 @@
+.footer {
+  background-color: rgb(27, 26, 26);
+  padding: 10px 10px;
+  overflow: hidden;
+  color: white;
+  position: sticky;
+  top: 100%;
+}
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  padding: 0px 5px;
+  font-size: 17px;
+  color: white;
+}
+a:hover {
+  color: var(--primary-color);
+  transition: 0.5s;
+}
+fa-icon {
+  padding: 0px 10px;
+}
+P {
+  font-size: 12px;
+}
